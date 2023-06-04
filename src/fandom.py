@@ -14,7 +14,7 @@ def query(url, article):
                     files.append(file_data['title'])
 
             try:
-                imcontinue = data['query-continue']['images']['imcontinue']
+                imcontinue = data['continue']['imcontinue']
                 query_url = f'{query_url}&imcontinue={imcontinue}'
             except KeyError:
                 break
